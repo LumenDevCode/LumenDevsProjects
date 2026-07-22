@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LumenDevs Projects</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Inter",sans-serif;
+}
+
+body{
+    background:
+        radial-gradient(circle at top,#ffd84d 0%,#ffca28 20%,#111 70%);
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle at 20% 20%,rgba(255,255,255,.07),transparent 25%),
+        radial-gradient(circle at 80% 40%,rgba(255,255,255,.05),transparent 30%);
+    pointer-events:none;
+}
+
+.container{
+    width:min(1100px,92%);
+    margin:auto;
+    padding:70px 0;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.hero h1{
+    font-size:clamp(3rem,7vw,5rem);
+    font-weight:800;
+    letter-spacing:-2px;
+}
+
+.hero h1 span{
+    color:#111;
+    background:#ffe46d;
+    padding:.1em .35em;
+    border-radius:12px;
+}
+
+.hero p{
+    margin-top:18px;
+    color:#f5f5f5;
+    font-size:1.1rem;
+    opacity:.9;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:rgba(20,20,20,.65);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
+    overflow:hidden;
+    transition:.35s;
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#ffd84d;
+    box-shadow:0 30px 60px rgba(255,208,0,.25);
+}
+
+.banner{
+    height:180px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:70px;
+    font-weight:800;
+    background:linear-gradient(135deg,#ffd84d,#ffb300);
+    color:#111;
+}
+
+.content{
+    padding:30px;
+}
+
+.content h2{
+    font-size:1.7rem;
+    margin-bottom:15px;
+}
+
+.content p{
+    color:#d6d6d6;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+button{
+    background:#ffd84d;
+    color:#111;
+    border:none;
+    padding:14px 24px;
+    border-radius:999px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.25s;
+    font-size:15px;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:white;
+}
+
+footer{
+    margin-top:80px;
+    text-align:center;
+    color:#d0d0d0;
+    opacity:.8;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="hero">
+<h1><span>LumenDevs</span> Projects</h1>
+<p>Small games, experiments, and future ideas.</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<div class="banner">bug</div>
+
+<div class="content">
+<h2>Bugs N Grubs</h2>
+
+<p>
+Feed giant hungry bugs smaller bugs and watch them grow.
+Simple, satisfying, and packed with lots of tiny critters.
+</p>
+
+<button>First Project</button>
+</div>
+</div>
+
+<div class="card">
+<div class="banner">?</div>
+
+<div class="content">
+<h2>GMTK Game Jam 26</h2>
+
+<p>
+No one knows what's coming...
+</p>
+
+<button>Coming Soon</button>
+</div>
+</div>
+
+</div>
+
+<footer>
+This websites css made thanks to Grape.JS, and people online. Html made thanks to Grape.JS
+</footer>
+
+</div>
+
+</body>
+</html>
+```
